@@ -1,0 +1,319 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Mobile-first starter site">
+    <title>Mobile‑first Starter</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles.css">
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="brand" href="#">
+          <div class="logo-round">Round</div>
+          <div class="logo-trip">Trip</div>
+          <div class="logo-ux">UX</div>
+        </a>
+        <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="primary-nav">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </button>
+        <nav id="primary-nav" class="nav" data-collapsed="true">
+          <ul>
+            <li><a href="#how">How It Works</a></li>
+            <li><a href="#pricing">Pricing</a></li>
+            <li><a href="#testimonials">Results</a></li>
+            <li><a href="#faq">FAQ</a></li>
+            <li><a href="#contact">Get Started</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main" class="site-main">
+      <section class="section hero">
+        <div class="container">
+          <h1>Turn More Visitors Into Paying Customers</h1>
+          <p>You're getting traffic. But are they actually calling, booking, or buying? We fix your entire customer journey—from first click to final sale.</p>
+          <div class="actions">
+            <a class="btn primary" id="cta-audit-top" href="#contact">See How We Help</a>
+            <a class="btn" href="#pricing">See Pricing</a>
+          </div>
+          <ul class="microproofs">
+            <li>✅ 180% more calls for Austin plumber</li>
+            <li>✅ 65% fewer no‑shows for HVAC company</li>
+          </ul>
+        </div>
+      </section>
+
+      <section id="how" class="section how">
+        <div class="container">
+          <div class="grid-3">
+            <article class="card">
+              <h2>Map Your Customer Journey</h2>
+              <p>We follow the path from "I need a plumber" to "I hired you." We find every point where customers get stuck or give up.</p>
+            </article>
+            <article class="card">
+              <h2>Fix the Broken Steps</h2>
+              <p>Maybe your booking process is too complicated. Or you're slow to respond to leads. Or your follow-up emails don't make sense. We fix all of it.</p>
+            </article>
+            <article class="card">
+              <h2>You Get More Customers</h2>
+              <p>When every step is smooth—from website to booking to follow-up—more people become paying customers instead of just "traffic."</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="examples" class="section examples">
+        <div class="container">
+          <h2>Real Problems We Fix</h2>
+          <div class="examples-grid">
+            <article class="example">
+              <div class="example-header">
+                <span>❌ Problem</span>
+                <span>✓ Our Solution</span>
+              </div>
+              <div class="example-body">
+                <div class="before">Your phone number is hard to find. Customers have to scroll and hunt for your number. They give up and call your competitor instead.</div>
+                <div class="after">Big "Call Now" button everywhere. Your number is visible at the top on every page. One tap on mobile to call instantly.</div>
+              </div>
+            </article>
+            <article class="example">
+              <div class="example-header">
+                <span>❌ Problem</span>
+                <span>✓ Our Solution</span>
+              </div>
+              <div class="example-body">
+                <div class="before">Visitors don't know what you do. Your homepage has generic text like "We provide quality service." Customers can't tell if you're the right fit.</div>
+                <div class="after">Clear headline that says exactly what you do. "Emergency Plumbing in Austin - 24/7" or "Roof Repair & Replacement Since 1995"</div>
+              </div>
+            </article>
+            <article class="example">
+              <div class="example-header">
+                <span>❌ Problem</span>
+                <span>✓ Our Solution</span>
+              </div>
+              <div class="example-body">
+                <div class="before">People request quotes but never respond. You send quotes via email. Customers don't reply. You don't know if they saw it or went with someone else.</div>
+                <div class="after">Automatic follow-up system. Set up simple reminders: "Still need help?" text after 2 days. "Did you get my quote?" email after a week. More responses = more jobs.</div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="pricing" class="section pricing">
+        <div class="container">
+          <div class="cta-inline">
+            <strong>Not sure where to start?</strong> Get a free 2‑minute video audit.
+            <a id="cta-audit-inline" class="btn small primary" href="#contact">Get my audit</a>
+          </div>
+          <div class="audit-demo" aria-label="Sample video audit preview">
+            <a class="glass-video" href="#" aria-label="Sample 2‑minute audit (placeholder)">
+              <div class="play"><span class="triangle" aria-hidden="true"></span></div>
+              <div class="caption">Watch a 2‑minute sample audit (placeholder)</div>
+            </a>
+          </div>
+
+          <div class="pricing-grid">
+            <article class="card price">
+              <div class="price-head">
+                <span class="icon" aria-hidden="true">⚡</span>
+                <h3>Customer Journey Audit</h3>
+              </div>
+              <p class="price-number">$299</p>
+              <p class="muted label">Delivered in 2 days</p>
+              <p class="desc">Pinpoint your biggest leaks and get a 1–2 page action plan.</p>
+              <ul class="bullets">
+                <li>5–7 min video walkthrough</li>
+                <li>Prioritized fix list (PDF)</li>
+                <li>Top 3 issues + 2 quick wins</li>
+              </ul>
+              <details class="more">
+                <summary>More details</summary>
+                <ul>
+                  <li>Journey test: site, forms, emails, booking</li>
+                  <li>Before/after mockups</li>
+                  <li>15‑minute strategy call</li>
+                </ul>
+              </details>
+              <div class="best-for">
+                ✓ Best for: Business owners who want a clear roadmap before investing in fixes.
+              </div>
+              <div class="actions">
+                <a class="btn primary" href="#contact" data-mailto-plan="Customer Journey Audit - $299" aria-label="Start Customer Journey Audit for $299">Start Audit</a>
+              </div>
+            </article>
+            <article class="card price featured">
+              <span class="ribbon" aria-hidden="true">Most Popular</span>
+              <div class="price-head">
+                <span class="icon" aria-hidden="true">🔧</span>
+                <h3>Done‑For‑You Quick Fixes</h3>
+              </div>
+              <p class="price-number">$1,497</p>
+              <p class="muted label">Live in 5 days</p>
+              <p class="desc">We ship the top fixes so more visitors call, book, or buy.</p>
+              <ul class="bullets">
+                <li>Audit included</li>
+                <li>Fix top 5 conversion killers</li>
+                <li>Mobile + speed optimization</li>
+              </ul>
+              <details class="more">
+                <summary>More details</summary>
+                <ul>
+                  <li>Tap‑to‑call, forms, nav clarified</li>
+                  <li>CTA buttons placed across journey</li>
+                  <li>Contact form simplified</li>
+                  <li>Deployed live — no dev needed</li>
+                </ul>
+              </details>
+              <div class="best-for">
+                ✓ Best for: Businesses that need results fast without a complete overhaul.
+              </div>
+              <div class="actions">
+                <a class="btn primary" href="#contact" data-mailto-plan="Done-For-You Quick Fixes - $1,497" aria-label="Start Done For You Quick Fixes for $1,497">Start Boost</a>
+              </div>
+            </article>
+            <article class="card price">
+              <div class="price-head">
+                <span class="icon" aria-hidden="true">🎯</span>
+                <h3>Complete Journey Transformation</h3>
+              </div>
+              <p class="price-number">$2,997</p>
+              <p class="muted label">Live in 2 weeks</p>
+              <p class="desc">Full redesign + build for the entire journey.</p>
+              <ul class="bullets">
+                <li>Audit + homepage + 3 key pages</li>
+                <li>Scheduling + follow‑ups</li>
+                <li>Launched for you</li>
+              </ul>
+              <details class="more">
+                <summary>More details</summary>
+                <ul>
+                  <li>Responsive design that actually converts</li>
+                  <li>Automated reminders and sequences</li>
+                  <li>Contact form optimization + auto‑responses</li>
+                  <li>2 revision rounds included</li>
+                </ul>
+              </details>
+              <div class="best-for">
+                ✓ Best for: Businesses ready to transform their entire customer experience and maximize revenue.
+              </div>
+              <div class="actions">
+                <a class="btn primary" href="#contact" data-mailto-plan="Complete Journey Transformation - $2,997" aria-label="Start Complete Journey Transformation for $2,997">Start Transformation</a>
+              </div>
+            </article>
+          </div>
+          <p class="guarantee">No pressure: if we’re not the right fit after the audit, you keep the plan and mockups.</p>
+        </div>
+      </section>
+
+      <section id="testimonials" class="section testimonials">
+        <div class="container">
+          <h2>Loved by local service businesses</h2>
+          <div class="testimonials-grid">
+            <figure class="card quote">
+              <blockquote>We saw a 180% jump in calls in the first month. Customers finally stop bouncing and just call.</blockquote>
+              <figcaption>— Owner, Austin Plumbing Co.</figcaption>
+            </figure>
+            <figure class="card quote">
+              <blockquote>No‑shows dropped by 65% after they fixed our booking and reminders. Worth every dollar.</blockquote>
+              <figcaption>— Ops Manager, HVAC Service</figcaption>
+            </figure>
+            <figure class="card quote">
+              <blockquote>They rebuilt our flow in a week. Clear CTAs everywhere. We closed 40% more jobs.</blockquote>
+              <figcaption>— Founder, Roofing & Repair</figcaption>
+            </figure>
+          </div>
+        </div>
+      </section>
+
+      <section id="faq" class="section faq">
+        <div class="container">
+          <h2>FAQ</h2>
+          <details class="card">
+            <summary>How fast can we start?</summary>
+            <div>We can usually start within 48 hours. The audit ships in 2 days. The DFY package goes live in ~5 business days.</div>
+          </details>
+          <details class="card">
+            <summary>Do you work with any industry?</summary>
+            <div>We focus on local services where calls/bookings matter most: plumbing, HVAC, roofing, dental, legal, wellness, and more.</div>
+          </details>
+          <details class="card">
+            <summary>What access do you need?</summary>
+            <div>Usually just your site URL and goals for the audit. If we implement, we’ll request temporary access to your CMS/host.</div>
+          </details>
+        </div>
+      </section>
+
+      <section id="checklist" class="section checklist">
+        <div class="container">
+          <h2>Free Checklist</h2>
+          <p>7 Website Mistakes Losing You Customers Right Now</p>
+          <form class="lead-form" action="#" method="post" novalidate>
+            <label class="sr-only" for="lead-email">Email</label>
+            <input id="lead-email" name="email" type="email" placeholder="you@example.com" required>
+            <button class="btn primary" type="submit">Send It Free</button>
+          </form>
+        </div>
+      </section>
+
+      <section id="final-cta" class="section final-cta">
+        <div class="container">
+          <h2>Yes, Send My Free Video Audit</h2>
+          <p>Get a fast, personalized walkthrough of your biggest conversion leaks.</p>
+          <a id="cta-audit-bottom" class="btn primary" href="#">Get My Audit</a>
+        </div>
+      </section>
+
+      <section id="contact" class="section contact">
+        <div class="container">
+          <h2>Contact</h2>
+          <form class="contact-form" action="#" method="post" novalidate>
+            <div class="field">
+              <label for="name">Name</label>
+              <input id="name" name="name" type="text" autocomplete="name" required>
+            </div>
+            <div class="field">
+              <label for="email">Email</label>
+              <input id="email" name="email" type="email" autocomplete="email" required>
+            </div>
+            <div class="field">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" rows="4" required></textarea>
+            </div>
+            <button class="btn primary" type="submit">Send</button>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <p>&copy; <span id="year"></span> Round Trip UX. All rights reserved.</p>
+        <p>Email: <a href="mailto:hello@roundtripux.com">hello@roundtripux.com</a></p>
+      </div>
+    </footer>
+
+    <div class="sticky-cta" role="region" aria-label="Mobile action bar">
+      <a id="cta-audit-sticky" class="btn primary" href="#contact">👉 Get Your Free Video Audit</a>
+    </div>
+
+    <noscript>
+      <div class="noscript">JavaScript is disabled. Navigation will remain expanded on large screens.</div>
+    </noscript>
+
+    <script src="./script.js" defer></script>
+  </body>
+  </html>
+
+
