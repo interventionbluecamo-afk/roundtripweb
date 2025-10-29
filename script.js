@@ -1,17 +1,25 @@
-// Mobile menu toggle
-const menuToggle = document.querySelector('.menu-toggle');
-const nav = document.querySelector('.nav');
-
-if (menuToggle && nav) {
-  menuToggle.addEventListener('click', () => {
-    const isCollapsed = nav.getAttribute('data-collapsed') === 'true';
-    nav.setAttribute('data-collapsed', !isCollapsed);
-    menuToggle.setAttribute('aria-expanded', isCollapsed);
-  });
+function toggleProcess() {
+    const steps = document.getElementById('processSteps');
+    const icon = document.getElementById('toggleIcon');
+    
+    steps.classList.toggle('open');
+    icon.classList.toggle('open');
 }
 
-// Update year
-const yearSpan = document.getElementById('year');
-if (yearSpan) {
-  yearSpan.textContent = new Date().getFullYear();
-}
+document.addEventListener('DOMContentLoaded', function() {
+    // Auto-open process steps on mobile for better UX
+    if (window.innerWidth <= 768) {
+        const steps = document.getElementById('processSteps');
+        const icon = document.getElementById('toggleIcon');
+        if (steps && icon) {
+            steps.classList.add('open');
+            icon.classList.add('open');
+        }
+    }
+    
+    // Update year in footer
+    const yearSpan = document.getElementById('year');
+    if (yearSpan) {
+        yearSpan.textContent = new Date().getFullYear();
+    }
+});
