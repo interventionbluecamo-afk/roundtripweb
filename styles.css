@@ -129,16 +129,37 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 8px;
-    margin-top: 20px;
-    padding-top: 20px;
-    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    gap: 12px;
+    margin-top: 32px;
 }
 
-.rating-stars {
-    font-size: 16px;
-    line-height: 1;
-    letter-spacing: 2px;
+.rating-avatars {
+    display: flex;
+    align-items: center;
+}
+
+.rating-avatars .avatar {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    margin-left: -8px;
+    transition: transform 0.2s;
+}
+
+.rating-avatars .avatar:first-child {
+    margin-left: 0;
+}
+
+.rating-avatars .avatar:hover {
+    transform: translateY(-2px);
+    z-index: 1;
 }
 
 .rating-text {
@@ -552,12 +573,33 @@ body {
     border: 1px solid #e5e7eb;
     border-radius: 16px;
     transition: all 0.3s;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
 }
 
 .roi-stat:hover {
     transform: translateY(-4px);
     box-shadow: 0 8px 32px rgba(0, 0, 0, 0.06);
     border-color: #d1d5db;
+}
+
+.roi-stat .emoji-burst {
+    position: absolute;
+    font-size: 24px;
+    pointer-events: none;
+    animation: emojiBurst 1s ease-out forwards;
+}
+
+@keyframes emojiBurst {
+    0% {
+        opacity: 1;
+        transform: translate(0, 0) scale(1) rotate(0deg);
+    }
+    100% {
+        opacity: 0;
+        transform: translate(var(--tx), var(--ty)) scale(1.5) rotate(var(--rotate));
+    }
 }
 
 .roi-stat-number {
