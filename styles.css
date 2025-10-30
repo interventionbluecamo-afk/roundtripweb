@@ -125,6 +125,28 @@ body {
     letter-spacing: 0.2px;
 }
 
+.hero-rating {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    margin-top: 20px;
+    padding-top: 20px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.rating-stars {
+    font-size: 16px;
+    line-height: 1;
+    letter-spacing: 2px;
+}
+
+.rating-text {
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.9);
+    font-weight: 600;
+}
+
 .problems {
     background: #fef2f2;
     border-left: 4px solid #ef4444;
@@ -1002,6 +1024,17 @@ body {
     font-size: 16px;
     color: #666;
     line-height: 1.6;
+}
+
+.faq-link {
+    color: #0a0a0a;
+    font-weight: 700;
+    text-decoration: underline;
+    transition: opacity 0.2s;
+}
+
+.faq-link:hover {
+    opacity: 0.7;
 }
 
 .founder {
