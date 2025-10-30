@@ -53,23 +53,6 @@ if (window.location.search.includes('success=true')) {
 }
 
 document.addEventListener('DOMContentLoaded', function() {
-    // Dynamic social proof badge
-    const proofMessages = [
-        '✓ Mike from Austin just booked an audit',
-        '✓ Sarah in Phoenix purchased 2 hours ago',
-        '✓ 3 audits delivered this week',
-        '✓ Carlos upgraded to implementation yesterday',
-        '✓ New audit order from Dallas',
-        '✓ Someone in Miami just booked a call',
-        '✓ 12 businesses helped this month'
-    ];
-    
-    const badge = document.querySelector('.social-proof-badge');
-    if (badge) {
-        const randomMessage = proofMessages[Math.floor(Math.random() * proofMessages.length)];
-        badge.textContent = randomMessage;
-    }
-
     // Auto-open process steps on mobile for better UX
     if (window.innerWidth <= 768) {
         const steps = document.getElementById('processSteps');
