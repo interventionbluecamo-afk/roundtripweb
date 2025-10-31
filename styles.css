@@ -84,8 +84,8 @@ a:hover{ opacity:0.9; }
 .pricing-confidence .icon-lock, .hero-confidence .icon-lock, .pricing-confidence .icon-clock, .hero-confidence .icon-clock{ color: var(--accent); }
 .video-showcase { background: #111111; padding: 64px 0; }
 .video-showcase h2 { text-align: center; font-size: 42px; font-weight: 900; margin-bottom: 12px; letter-spacing: -1px; color: #fff; }
-.video-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 24px; max-width: 1100px; margin: 0 auto; }
-.video-card { background: #161616; border: 1px solid #262626; border-radius: 16px; overflow: hidden; box-shadow: 0 10px 30px rgba(0,0,0,0.45); transition: transform 0.2s ease, box-shadow 0.2s ease; }
+.video-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 24px; max-width: 1100px; margin: 0 auto; }
+.video-card { background: #161616; border: 1px solid #262626; border-radius: 16px; overflow: hidden; box-shadow: 0 10px 30px rgba(0,0,0,0.45); transition: transform 0.2s ease, box-shadow 0.2s ease; max-width: 360px; margin: 0 auto; }
 .video-card:hover { transform: translateY(-2px); box-shadow: 0 16px 40px rgba(0,0,0,0.5); }
 .video-caption { padding: 16px 18px; display: flex; flex-direction: column; gap: 4px; }
 .video-caption strong { font-size: 16px; color: #f5f5f5; }
@@ -94,7 +94,27 @@ a:hover{ opacity:0.9; }
 @media (max-width: 768px) {
     .video-showcase { padding: 48px 0; }
     .video-showcase h2 { font-size: 32px; }
+    .video-grid { 
+        grid-template-columns: none; 
+        grid-auto-flow: column; 
+        grid-auto-columns: 85%; 
+        overflow-x: auto; 
+        scroll-snap-type: x mandatory; 
+        -webkit-overflow-scrolling: touch; 
+        padding-bottom: 6px;
+        gap: 16px;
+    }
+    .video-grid::-webkit-scrollbar { display: none; }
+    .video-card { scroll-snap-align: start; }
+    .video-thumb { padding-bottom: 177.78%; }
+    .video-caption { padding: 12px 14px; }
 }
+
+/* Call section */
+.call-section { background: var(--bg); padding: 56px 0; border-top: 1px solid var(--border); }
+.call-card { max-width: 780px; margin: 0 auto; text-align: center; background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius-lg); padding: 28px; box-shadow: var(--shadow-sm); }
+.call-card h2 { font-size: 36px; font-weight: 900; letter-spacing: -0.8px; margin-bottom: 8px; }
+.call-sub { font-size: 16px; color: var(--text-muted); margin-bottom: 18px; }
 * {
     margin: 0;
     padding: 0;
@@ -1122,7 +1142,7 @@ body {
 .video-thumb {
     position: relative;
     width: 100%;
-    padding-bottom: 56.25%; /* 16:9 */
+    padding-bottom: 177.78%; /* 9:16 vertical */
     border-radius: 16px;
     overflow: hidden;
     background: linear-gradient(180deg, #0a0a0a 0%, #1f2937 100%);
